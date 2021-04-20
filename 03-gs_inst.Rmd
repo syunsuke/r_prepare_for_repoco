@@ -137,3 +137,7 @@ binディレクトリをPathに登録できたら、
 knitr::include_graphics("images/006pathkansei.png")
 ```
 
+作業が完了したら「OK」ボタンをクリックして、内容を反映させます。
+
+更に、Windowsのアプリを全部終了し、一旦、Windowsを再起動して下さい。ね
+
