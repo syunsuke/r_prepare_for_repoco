@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE, fig.align = "center")
 
 Rパッケージ「repoco」は、retiパッケージ経由で取り込んだ不動産取引価格情報のデータをレポートとして纏め、pdf形式のファイルで出力するツール集として開発しています。
 
+https://github.com/rea-osaka/repoco
+
 ここで、pdfファイル出力のために、TeXと呼ばれる組版処理システムを利用しており、このTexがシステムに無いと、Rパッケージ「repoco」をインストールしてもレポートの出力が出来ません。
 一方、このTeXのシステムをインストールしておけば、
 「repoco」に限らず、Rmarkdownで、いつでもpdfのレポートを作ることが出来るようになります。
