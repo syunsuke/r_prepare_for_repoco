@@ -1,0 +1,50 @@
+--- 
+title: "repocoを使うための準備について"
+author: "福田俊介"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+link-citations: yes
+description: "Rパッケージ「repoco」の使い方"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE, fig.align = "center")
+
+```
+
+# はじめに
+
+Rパッケージ「repoco」は、retiパッケージ経由で取り込んだ不動産取引価格情報のデータをレポートとして纏め、pdf形式のファイルで出力するツール集として開発しています。
+
+ここで、pdfファイル出力のために、TeXと呼ばれる組版処理システムを利用しており、このTexがシステムに無いと、Rパッケージ「repoco」をインストールしてもレポートの出力が出来ません。
+一方、このTeXのシステムをインストールしておけば、
+「repoco」に限らず、Rmarkdownで、いつでもpdfのレポートを作ることが出来るようになります。
+
+そこで、まず、WindowsにTeXのシステムをインストールする方法を紹介します。
+
+ここでは、既にRやRStuidoのインストールがなされており、
+RStudioを触った事があり、パッケージのインストールも自分で出来る事を前提にしています。
+
+もし、まだ、RStudio等が未経験ならば、以下の文書を参考にしてください。
+
+- [初心者向けRのインストールガイド](https://syunsuke.github.io/r_install_guide_for_beginners/)
+- [Rビギナーズガイド](https://syunsuke.github.io/r_beginners_guide/)
+
+パッケージについては、データ分析に必須と言われているtidyverseのパッケージ群だけでなく、**rmarkdown**パッケージも事前にインストールしておいて下さい。
+
+更に、githubから、`reti`、`retiex`、`repoco`のパッケージをこの順にひとつづつ順にインストールしておいて下さい。
+
+
+```{r eval=FALSE}
+# retiのインストール
+devtools::install_github("rea-osaka/reti")
+
+# retiexのインストール
+devtools::install_github("rea-osaka/retiex")
+
+# retiのインストール
+devtools::install_github("rea-osaka/repoco")
+```
+
+

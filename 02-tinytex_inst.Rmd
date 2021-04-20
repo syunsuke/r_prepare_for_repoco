@@ -1,0 +1,35 @@
+# tinytexパッケージ
+
+`tinytex`はRのパッケージです。
+`tinytex`は、Rmarkdownの作者の一人Yihui Xieさんが開発していて、
+[TinyTeX](https://yihui.org/tinytex/)でドキュメントを公開しています。興味のある方は、そちらのほうも目を通してみてください。
+
+
+## パッケージのインストール
+
+ここではまずは、この`tinytex`パッケージをRにインストールします。
+RStudio等からRのプロンプトで、次のコマンドを実行します。
+
+```{r eval=FALSE}
+install.packages("tinytex")
+```
+
+tinytexパッケージのインストールはすぐに終わります。
+
+
+## TeXのインストール
+
+tinytexパッケージに含まれる関数を使い
+TeXのインストールをRStudio等のRのプロンプトから行います。
+
+```{r eval=FALSE}
+tinytex::install_tinytex()
+```
+
+このコマンド名`intall_tinytex()`にある`tinytex`は、
+**Rパッケージ**の`tinytex`を指しているのではなく、**TeXディストリビューション**としての`tinytex`を指しています。ですから、「さっきも、tinytexをインストールしたはずなのにまたインストールするの？」と不安にならなくても大丈夫です。
+
+ダウンロードと、そのインストールはしばらく時間が掛かります。
+
+インストールが終了して、コンソールのプロンプトが戻ってきたら、
+一旦、RStudioを終了し、それから次の作業へ進みます。
